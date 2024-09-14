@@ -15,9 +15,13 @@ java {
 
 repositories {
 	mavenCentral()
+	mavenLocal()
 }
 
 dependencies {
+	// API
+	implementation 'org.example:lib-demo:1.0.45'
+
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	runtimeOnly 'org.postgresql:postgresql'

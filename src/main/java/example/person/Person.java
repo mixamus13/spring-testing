@@ -16,7 +16,8 @@ public class Person {
     private String firstName;
     private String lastName;
 
-    protected Person() {}
+    protected Person() {
+    }
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
@@ -41,8 +42,8 @@ public class Person {
         if (o == null || getClass() != o.getClass()) return false;
         var person = (Person) o;
         return id == person.id &&
-                Objects.equals(firstName, person.firstName) &&
-                Objects.equals(lastName, person.lastName);
+               Objects.equals(firstName, person.firstName) &&
+               Objects.equals(lastName, person.lastName);
     }
 
     @Override
@@ -53,9 +54,9 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "id='" + id + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
+               "id='" + id + '\'' +
+               ", firstName='" + firstName + '\'' +
+               ", lastName='" + lastName + '\'' +
+               '}';
     }
 }
